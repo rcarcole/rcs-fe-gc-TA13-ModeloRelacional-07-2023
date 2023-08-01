@@ -1,0 +1,9 @@
+- Fondos: titulo (PK): varchar(30), autor (PK2): varchar(20), cantidad: int
+- Libros: signatura (PK): int, disponible: boolean, fondos_titulo (FK): varchar(50), autor (FK2): int
+- Prestamos: nºprestamo (PK): int, fecha_prest: date, tipo: varchar(30), libros_signatura (FK): int
+- Prestamos_S: prestamos_n_prestamo (PK, FK): int
+- Prestamos_E: prestamos_n_prestamo (PK, FK): int, fecha_devol: date
+- Socios: nºsocio (PK): int, nombre: varchar(50), apellidos: varchar(30), telefono: int, fecha_cad: date
+- Sanciones: nºdias (PK): int
+- Prestamos_socios: prestamos_n_prestamo (PK, FK): int, socios_n_socio (PK2, FK2): int
+- Socios_tiene_sanciones: socio_nºsocio (PK, FK): int, sanciones_n_dias (PK2, FK2): int

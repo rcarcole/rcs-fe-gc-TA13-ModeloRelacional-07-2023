@@ -1,0 +1,6 @@
+- Elementos: nombre_elem (PK): varchar(30), peso_atomico: int, simbolo: varchar(2), nºatomico: int.
+- Compuestos: nombre_comp (PK): varchar(30), estado: varchar(30) 
+- Gaseosos: coef_expan: int, temp_lic (PK): int
+- Liquidos: densidad (PK): int, temp_evap: int
+- Solidos: color: varchar(50), olor: varchar(50), dureza (PK): int
+- Compuesto_por: nombre_elem (FK), nombre_comp (FK2), proporcion: int

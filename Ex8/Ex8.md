@@ -1,0 +1,11 @@
+- Cargos: codigo_cargo (PK): int, nombre: varchar(30), funciones: varchar (30)
+- Pisos: puerta (PK): varchar(3), dni (PK): varchar (9), nombre: varchar (30), apellidos: varchar(30), direccion: varchar(30), codigo_postal: int, localidad: varchar(30)
+- Anotaciones: codigo_anotacion (PK): int, fecha: date, importe: int
+- Ingreso_recibos: mes: date, pagado: boolean.
+- Detalle_recibos: numero_linea (PK): int, concepto varchar(30), importe: int
+- Ingresos_extra: concepto: varchar(30)
+- Gastos_fijos: fecha_inicio: date, fecha_fin: date, consumo: int
+- Tipo_gastos_fijos: codigo_tipo (PK): int, nombre: varchar(30), descripcion: varchar(30)
+- Gastos_variables: fecha_factura: date, concepto: varchar(30), numero_factura: int
+- Piso_cargo: puerta (FK): varchar(30), numero_linea (FK): int
+- Anotacion_tipo_gastoFijo: codigo_tipo_gasto (FK): int, codigo_anotacion (FK): int

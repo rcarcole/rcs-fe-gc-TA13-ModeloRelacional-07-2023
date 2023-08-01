@@ -1,0 +1,5 @@
+- Clientes: dni (PK): varchar(9), nombre: varchar(30), apellidos: varchar(30), direccion: varchar(50), ciudad: varchar(30).
+- Sucursales: nºsucursal (PK): int, ciudad: varchar(20), activo: boolean.
+- Cuentas: nºcuenta (PK): int, saldo: int.
+- Clientes_sucursales: cliente_dni (PK, FK): varchar(9), cuenta_nºcuenta (PK2, FK2): int, sucursal_nºsucursal (PK3 FK3) 
+- Transacciones: nºtransaccion (PK): int, fecha: date, tipoOperacion: varchar(50), cantidad: int, nºcuenta (FK): int.

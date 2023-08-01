@@ -1,0 +1,13 @@
+- Parque bomberos: cod_parque (PK): int, nombre: varchar(30), direccion: varchar (30), telefono: int, categoria: varchar(30)
+- Coches: num_coches PK: int, cod_parque PK FK:int, marca: varchar(50), modelo: varchar(50), num_matricula: varchar(7), fecha_compra: date, fecha_ult_rev: date.
+- Peticiones: cod_pet_serv PK: int, tipo_serv: varchar(50), grado:urgencia: varchar(50)
+- Parque_bomberos_peticiones_servicios: cod_pet_serv (PK FK): int, cod_pet_serv (PK2 FK2): int, fecha: date, hora: int.
+- Equipos: Cod_turno (PK): int, descripcion: varchar(100).
+- Peticion Servicio: CodPetServ (PK, FK): int, cod_equipo (PK FK):int.
+- Bomberos: cod_bombero (PK): int, nombre: varchar(30), apellidos: varchar(50), fecha_nac: date, dni: varchar(9), direccion: varchar(50), telefono: int.
+- Turno: Cod_turno (PK), descripcion: varchar(100)
+- Periodos: fecha_inicio (PK): date, fecha_fin(PK2): date
+- Equipo: cod_eq (PK), nombre
+- Bomberos_turnos_periodos: cod_bombero (PK, FK):int, cod_turno (PK2, FK2): int, fecha_inicio (PK3, FK3): date, fecha_fin (PK4, FK4).
+- Bomberos_parque_bomberos: cod_bombero (PK, FK): int, cod_parque (PK2, FK2): int
+- Bomberos_equipos: cod_bombero (PK, FK): int, cod_equipo (PK2, FK2): int, puesto: varchar (20)

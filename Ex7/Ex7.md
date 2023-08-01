@@ -1,0 +1,5 @@
+- Arrendatarios: DNI/CIF_arrendatario (PK): varchar(9), nombre_fiscal: varchar(50), nombre_firmante: varchar (30), direccion: varchar(50), codigo_postal: int, localidad: varchar(50), provincia: varchar(50), telefono_fijo: int, telefono_movil: int, fax: int, actividad: varchar (100)
+- Naves: cod_nave (PK): int, poligono: varchar(50), calle: varchar(50), numero:int, localidad: varchar(30), codigo_postal: int, provincia: varchar(30), telefono: int, caracteristicas: varchar(100), foto: varchar(30), datos_escritura: varchar(50), alquilada: boolean, gastos_comunidad: float
+- Recibos: numero_recibos (PK): int, importe_total: float, improve_iva: float, pagado: boolean, fecha: date
+- Arrendatarios_naves: arrendatarios_nif/cif_arrendatario (PK, FK): varchar(30), naves_cod_nave (PK2, FK2): int, numero_cuenta: int, dias_pago: int, fecha_alguiler: date, fecha_fin_alquiler: date, importe_alquiler: float
+- Naves_recibos: naves_cod_nave (PK, FK): int, recibos_numero_recibos (PK2, FK2): int

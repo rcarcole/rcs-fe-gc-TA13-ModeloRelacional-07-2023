@@ -1,0 +1,6 @@
+- Clientes: cod_cliente (PK): int.
+- Pedidos: cod_pedido (PK): int, fecha_pedido: date, clientes_cod_cliente (FK): int
+- Productos: cod_producto (PK): int, cantidad: int
+- Proveedores: cod_proveedor (PK): int
+- Proveedores_productos: productos_cod_producto (PK, FK): int, proveedores_cod_proveedor (PK2, FK2): int, unidades: int, fecha_encargo: date
+- Detalle_pedido: pedidos_cod_pedido (PK, FK): int, productos_cod_producto (PK2, FK2): int, num_unidades: int

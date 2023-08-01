@@ -1,0 +1,1 @@
+- Atletas: NDorsal (PK):int, Nombre varchar (30), Da_relevo_a (FK)
